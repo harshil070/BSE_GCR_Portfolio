@@ -1,6 +1,6 @@
 
 Hand Gesture Controlled Robotic Car
-This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle. Coming into this program I had no idea how to wire up a robot 
+This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle. Coming into this program I had no idea how to wire up a robot or how to code one either, but this program taught me everything that I didn't know.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -14,15 +14,7 @@ This project is a car being controlled by a hand gesture using sensors to detect
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3CqvFKtBGkU?si=xddfLafDnOfeOn1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-
-
-
+For my first milestone, I finished wiring my controller and my car. I also wrote the code for both parts of  my project. My Car's Bluetooth module is going to be paired with my Bluetooth  controller, and the accelerometer on my controller is going to be sending the commands to the Arduino micro. Since the two Bluetooth modules will be connected to the Serial Monitor in Arduino, the commands being sent from the accelerometer to the car as well make the car move. All this happens in less than a second. Some technical problems I experienced are the motors not working and I plan on fixing that by a little debugging. I plan to finish pairing my Bluetooth and fixing my motors before my next milestone.
 # Second Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyng-c79wjQ?si=Jazi3INgjwJ0SHLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
