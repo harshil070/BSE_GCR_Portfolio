@@ -1,6 +1,6 @@
 
 Hand Gesture Controlled Robotic Car
-This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle. It can also do a special trick called a wheelie where the car puts all the weight on the back two wheels and those two wheels control the movement of the car.  
+This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -10,11 +10,10 @@ This project is a car being controlled by a hand gesture using sensors to detect
 
 ![Headstone Image](logo.svg)
   
-# Final Milestone
+# First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3CqvFKtBGkU?si=xddfLafDnOfeOn1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3CqvFKtBGkU?si=-stEC_KrTNcV-6nX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
@@ -26,9 +25,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qyng-c79wjQ?si=Jazi3INgjwJ0SHLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
@@ -36,18 +33,11 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
 
-# First Milestone
+# Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P78BjWGThLY?si=HmyEVos00G2v-uIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="[[https://www.youtube.com/embed/CaCazFBhYK](https://youtu.be/3CqvFKtBGkU?si=nbu1ccYaDJCIofzJ)]([https://youtu.be/3CqvFKtBGkU?si=nbu1ccYaDJCIofzJ](https://youtu.be/3CqvFKtBGkU?si=nbu1ccYaDJCIofzJ))s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For my first milestone, I've completed making the circuit for my controller and my car. The car uses Arduino Uno which is then connected to the H-bridges and the breadboard with the DSD blue tooth module
-For your first milestone, describe your project and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+For my final milestone, I made my motors work so they move to a 180-degree rotation twice and then stop for 1 to 2 seconds and repeat that loop. So far, I still have to figure out my Bluetooth module connection issue for my controller and car. I plan to finish connecting my modules and a lot of modifications like the car being able to do a wheelie, etc. I learned a lot about accelerometers and Bluetooth modules since I had a lot of debugging to do. I hope to learn more advance technologies and ways to make more difficult robots. 
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
