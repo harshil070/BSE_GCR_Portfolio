@@ -27,11 +27,8 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyng-c79wjQ?si=Jazi3INgjwJ0SHLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+I finished making my accelerometer where the 3-axis gyroscope sends the direction the gyroscope moves and sends the command to the Arduino micro which also sends it to the Serial Monitor.
+For your second milestone, explain what you've worked on since your previous milestone. The surprising part is how some things can't work because of one minor wire and small code. My biggest challenge before was my wiring which I ended up fixing. Before my final milestone. I want my motors to be working and my Bluetooth to be connected so my controller can move with my car.
 
 # Final Milestone
 
