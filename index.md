@@ -1,6 +1,6 @@
 
 Hand Gesture Controlled Robotic Car
-This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle.
+This project is a car being controlled by a hand gesture using sensors to detect movements of your hands which gets input to the vehicle. Coming into this program I had no idea how to wire up a robot 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -40,59 +40,171 @@ For my final milestone, I made my motors work so they move to a 180-degree rotat
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-Here is my code for the bluetooth modules
 ```c++
 
 //code for the controller
 
-void setup() 
+#include <Wire.h>
+
+#define MPU6050_ADDRESS 0x68
+
+int16_t accelerometerX, accelerometerY, accelerometerZ;
+
+void setup()
 {
+  Wire.begin();
   Serial.begin(38400);
-  Serial1.begin(38400);
+
+  
+  Wire.beginTransmission(MPU6050_ADDRESS);
+  Wire.write(0x6B);  
+  Wire.write(0);     
+  Wire.endTransmission(true);
+
+  delay(100); 
 }
 
-void loop() 
+void loop()
 {
-  if (Serial1.available())
-  {
-    Serial.print((char)Serial1.read());
+  readAccelerometerData();
+  determineGesture();
+  delay(500);
+}
+
+void readAccelerometerData()
+{
+  Wire.beginTransmission(MPU6050_ADDRESS);
+  Wire.write(0x3B);  
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU6050_ADDRESS, 6, true);  
+
+ 
+  accelerometerX = Wire.read() << 8 | Wire.read();
+  accelerometerY = Wire.read() << 8 | Wire.read();
+  accelerometerZ = Wire.read() << 8 | Wire.read();
+}
+
+void determineGesture()
+{
+  if (accelerometerY >= 6500) {
+    Serial.write('F');
+    Serial.println('F');
   }
-  if (Serial.available())
-  {
-    Serial1.write(Serial.read());
+  else if (accelerometerY <= -4000) {
+    Serial.write('B');
+    Serial.println('B');
+  }
+  else if (accelerometerX <= -3250) {
+    Serial.write('L');
+    Serial.println('L');
+  }
+  else if (accelerometerX >= 4000) {
+    Serial.write('R');
+    Serial.println('R');
+  }
+  else {
+    Serial.write('S');
+    Serial.println('S');
   }
 }
 
 //code for the car
 
-#include <SoftwareSerial.h>
-
-#define tx 2
-#define rx 3
-
-SoftwareSerial configBt = SoftwareSerial(rx, tx); 
-long tm, t, d; 
+int B1A = 9; //top 2 motors
+int B1B = 10; //top 2 motors
+int A1A = 6; //top 2 motors
+int A1B = 5; //top 2 motors
+int b1a = 7; //bottom 2 motors
+int b1b = 8; //bottom 2 motors
+int a1a = 11; //bottom 2 motors
+int a1b = 12; //bottom 2 motors
 
 void setup()
 {
   Serial.begin(38400);
-  Serial.print("hello");
-  configBt.begin(38400);
-  pinMode(tx, OUTPUT);
-  pinMode(rx, INPUT);
+
+  pinMode(B1A, OUTPUT);
+  pinMode(B1B, OUTPUT);
+  pinMode(A1A, OUTPUT);
+  pinMode(A1B, OUTPUT);
+  pinMode(b1a, OUTPUT);
+  pinMode(b1b, OUTPUT);
+  pinMode(a1a, OUTPUT);
+  pinMode(a1b, OUTPUT);
 }
 
 void loop()
 {
-  if (configBt.available())
-  {
-    Serial.print((char)configBt.read());
-  }
-  if (Serial.available())
-  {
-    configBt.write(Serial.read());
-  }
+  forward();
+  delay(1000);
+  back();
+  delay(1000);
 }
+
+void forward(){
+  
+    digitalWrite(B1A, HIGH);
+    digitalWrite(B1B, LOW);
+    digitalWrite(A1A, LOW);
+    digitalWrite(A1B, HIGH);
+    digitalWrite(b1a, HIGH);
+    digitalWrite(b1b, LOW);
+    digitalWrite(a1a, LOW);
+    digitalWrite(a1b, HIGH);
+
+  }
+
+void left(){
+
+    digitalWrite(B1A, HIGH);
+    digitalWrite(B1B, LOW);
+    digitalWrite(A1A, LOW);
+    digitalWrite(A1B, HIGH);
+    digitalWrite(b1a, HIGH);
+    digitalWrite(b1b, LOW);
+    digitalWrite(a1a, LOW);
+    digitalWrite(a1b, HIGH);
+
+  }
+
+void right(){
+
+    digitalWrite(B1A, LOW);
+    digitalWrite(B1B, HIGH);
+    digitalWrite(A1A, HIGH);
+    digitalWrite(A1B, LOW);
+    digitalWrite(b1a, LOW);
+    digitalWrite(b1b, HIGH);
+    digitalWrite(a1a, HIGH);
+    digitalWrite(a1b, LOW);
+
+  }
+
+void back(){
+
+    digitalWrite(B1A, LOW);
+    digitalWrite(B1B, HIGH);
+    digitalWrite(A1A, HIGH);
+    digitalWrite(A1B, LOW);
+    digitalWrite(b1a, LOW);
+    digitalWrite(b1b, HIGH);
+    digitalWrite(a1a, HIGH);
+    digitalWrite(a1b, LOW);
+
+  }
+
+void freeze(){
+
+    digitalWrite(B1A, HIGH);
+    digitalWrite(B1B, LOW);
+    digitalWrite(A1A, LOW);
+    digitalWrite(A1B, HIGH);
+    digitalWrite(b1a, HIGH);
+    digitalWrite(b1b, LOW);
+    digitalWrite(a1a, LOW);
+    digitalWrite(a1b, HIGH);
+
+  }
 ```
 
 # Bill of Materials 
