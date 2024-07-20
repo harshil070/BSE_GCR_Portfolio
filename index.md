@@ -29,7 +29,9 @@ For your second milestone, explain what you've worked on since your previous mil
 For my final milestone, I made my motors work so they move to a 180-degree rotation twice and then stop for 1 to 2 seconds and repeat that loop. So far, I still have to figure out my Bluetooth module connection issue for my controller and car. I plan to finish connecting my modules and a lot of modifications like the car being able to do a wheelie, etc. I learned a lot about accelerometers and Bluetooth modules since I had a lot of debugging to do. I hope to learn more advance technologies and ways to make more difficult robots. 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources for creating professional schematic diagrams, though BSE recommends Tinkercad because it can be done easily and for free in the browser. 
+
+Car Schematic
+![Headstone Image](Car-Circuit.png)
 
 # Code
 ```c++
