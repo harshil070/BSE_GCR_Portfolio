@@ -14,13 +14,13 @@ This project is a car being controlled by a hand gesture using sensors to detect
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3CqvFKtBGkU?si=xddfLafDnOfeOn1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my first milestone, I finished wiring my controller and my car. I also wrote the code for both parts of  my project. My Car's Bluetooth module is going to be paired with my Bluetooth  controller, and the accelerometer on my controller is going to be sending the commands to the Arduino micro. Since the two Bluetooth modules will be connected to the Serial Monitor in Arduino, the commands being sent from the accelerometer to the car as well make the car move. All this happens in less than a second. Some technical problems I experienced are the motors not working and I plan on fixing that by a little debugging. I plan to finish pairing my Bluetooth and fixing my motors before my next milestone.
+For my first milestone, I finished wiring my controller and my car. I also wrote the code for both parts of  my project. My Car's Bluetooth module will be paired with my Bluetooth controller, and the accelerometer on my controller will send the commands to the Arduino micro. Since the two Bluetooth modules will be connected to the Serial Monitor in Arduino, the commands being sent from the accelerometer to the car will make the car move. All this happens in less than a second. Some technical problems I experienced are the motors not working and I plan on fixing that by a little debugging. I plan to finish pairing my Bluetooth and fixing my motors before my next milestone.
 # Second Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyng-c79wjQ?si=Jazi3INgjwJ0SHLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I finished making my accelerometer where the 3-axis gyroscope sends the direction the gyroscope moves and sends the command to the Arduino micro which also sends it to the Serial Monitor.
-For your second milestone, explain what you've worked on since your previous milestone. The surprising part is how some things can't work because of one minor wire and small code. My biggest challenge before was my wiring which I ended up fixing. Before my final milestone. I want my motors to be working and my Bluetooth to be connected so my controller can move with my car.
+For your second milestone, explain what you've worked on since your previous milestone. Surprisingly, some things can't work because of one minor wire and a small code. My biggest challenge before was my wiring which I ended up fixing. Before my final milestone. I want my motors to work and my Bluetooth to be connected so my controller can move with my car.
 
 # Final Milestone
 
@@ -29,7 +29,7 @@ For your second milestone, explain what you've worked on since your previous mil
 For my final milestone, I made my motors work so they move to a 180-degree rotation twice and then stop for 1 to 2 seconds and repeat that loop. So far, I still have to figure out my Bluetooth module connection issue for my controller and car. I plan to finish connecting my modules and a lot of modifications like the car being able to do a wheelie, etc. I learned a lot about accelerometers and Bluetooth modules since I had a lot of debugging to do. I hope to learn more advance technologies and ways to make more difficult robots. 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources for creating professional schematic diagrams, though BSE recommends Tinkercad because it can be done easily and for free in the browser. 
 
 # Code
 ```c++
