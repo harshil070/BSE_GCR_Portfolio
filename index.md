@@ -31,7 +31,7 @@ For my final milestone, I made my motors work so they move to a 180-degree rotat
 # Schematics 
 
 Car Schematic
-![Headstone Image](Car-Circuit.png)
+![Headstone Image](Car.png)
 
 # Code
 ```c++
