@@ -33,6 +33,9 @@ For my final milestone, I made my motors work so they move to a 180-degree rotat
 Car Schematic
 ![Headstone Image](Car.png)
 
+Controller Schematic
+![Headstone Image](
+
 # Code
 ```c++
 
