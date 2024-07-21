@@ -34,7 +34,7 @@ Car Schematic
 ![Headstone Image](Car.png)
 
 Controller Schematic
-![Headstone Image](
+![Headstone Image](Controller.png)
 
 # Code
 ```c++
