@@ -8,7 +8,7 @@ This project is a car being controlled by a hand gesture using sensors to detect
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+![Headstone Image](Project.)
   
 # First Milestone
 
@@ -20,7 +20,8 @@ For my first milestone, I finished wiring my controller and my car. I also wrote
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyng-c79wjQ?si=Jazi3INgjwJ0SHLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I finished making my accelerometer where the 3-axis gyroscope sends the direction the gyroscope moves and sends the command to the Arduino micro which also sends it to the Serial Monitor.
-For your second milestone, explain what you've worked on since your previous milestone. Surprisingly, some things can't work because of one minor wire and a small code. My biggest challenge before was my wiring which I ended up fixing. Before my final milestone. I want my motors to work and my Bluetooth to be connected so my controller can move with my car.
+For your second milestone, explain what you've worked on since your previous milestone. Surprisingly, some things can't work because of one minor wire and a small code. My biggest challenge before was my wiring which I ended up fixing before
+my final milestone. I want my motors to work and my Bluetooth to be connected so my controller can move with my car.
 
 # Final Milestone
 
